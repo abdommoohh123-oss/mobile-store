@@ -1,0 +1,20 @@
+.add-to-cart-button {
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.7rem 1rem;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.add-to-cart-button:hover {
+  background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.add-to-cart-button:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.35);
+  outline-offset: 2px;
+}

@@ -1,0 +1,87 @@
+.sidenav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(280px, 85vw);
+  height: 100vh;
+  background: #ffffff;
+  box-shadow: -8px 0 24px rgba(23, 32, 51, 0.15);
+  border-left: 1px solid #e5e7eb;
+  z-index: 1100;
+  padding: 18px 16px;
+  animation: slideIn 0.25s ease forwards;
+}
+
+.sidenav-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.close-button {
+  border: none;
+  background: transparent;
+  color: #172033;
+  font-size: 28px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-button:hover {
+  color: #1769e0;
+}
+
+.sidenav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sidenav li {
+  width: 100%;
+}
+
+.sidenav a {
+  display: block;
+  text-decoration: none;
+  color: #172033;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 14px;
+  border-radius: 10px;
+  transition: 0.2s ease;
+}
+
+.sidenav a:hover {
+  background: #f3f7ff;
+  color: #1769e0;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  .sidenav {
+    width: min(260px, 85vw);
+    padding: 14px 12px;
+  }
+
+  .sidenav a {
+    font-size: 15px;
+    padding: 10px 12px;
+  }
+}
